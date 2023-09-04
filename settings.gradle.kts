@@ -5,9 +5,8 @@ pluginManagement {
         }
         mavenCentral()
         gradlePluginPortal()
-        maven("https://maven.teamvoided.org/releases")
     }
 }
 
-rootProject.name = "TeamVoidedTemplate"
+rootProject.name = "NarrusYeetus"
 

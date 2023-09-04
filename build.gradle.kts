@@ -1,42 +1,35 @@
-import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
-    kotlin("jvm") version "1.9.0"
-    kotlin("plugin.serialization") version "1.9.0"
-    id("org.teamvoided.iridium") version "2.4.0"
-    id("iridium.mod.build-script") version "2.4.0"
+    id("fabric-loom") version "1.3.9"
 }
 
 group = project.properties["maven_group"]!!
 version = project.properties["mod_version"]!!
 base.archivesName.set(project.properties["archives_base_name"] as String)
-description = "TeamVoided Template Description"
 
 repositories {
     mavenCentral()
 }
 
-modSettings {
-    modId(base.archivesName.get())
-    modName("Team Voided Template")
-
-    entrypoint("main", "org.teamvoided.template.Template::commonInit")
-    entrypoint("client", "org.teamvoided.template.Template::clientInit")
-
-    mixinFile("template.mixins.json")
-
-    isModParent(true)
+dependencies {
+    minecraft("com.mojang:minecraft:1.20.1")
+    mappings("net.fabricmc:yarn:1.20.1+build.10:v2")
+    modImplementation("net.fabricmc:fabric-loader:${property("loader_version")}")
 }
 
 tasks {
+    processResources {
+        inputs.property("version", project.version)
+        filteringCharset = "UTF-8"
+
+        filesMatching("fabric.mod.json") {
+            expand(mapOf("version" to project.version))
+        }
+    }
     val targetJavaVersion = 17
     withType<JavaCompile> {
         options.encoding = "UTF-8"
         options.release.set(targetJavaVersion)
-    }
-
-    withType<KotlinCompile> {
-        kotlinOptions.jvmTarget = targetJavaVersion.toString()
     }
 
     java {

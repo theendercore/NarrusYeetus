@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "narrus_yeetus",
+  "version": "${version}",
+  "name": "Narrus Yeetus",
+  "description": "Remove the pesky narrator and all the errors related to it.",
+  "authors": [
+    "TheEnderCore"
+  ],
+  "mixins": [
+    "narrus_yeetus.mixins.json"
+  ],
+  "depends": {
+    "minecraft" :"*",
+    "fabricloader": ">=0.14.10"
+  },
+  "contact": {
+    "homepage": "https://github.com/theendercore/NarrusYeetus",
+    "issues": "https://github.com/theendercore/NarrusYeetus/issues",
+    "sources": "https://github.com/theendercore/NarrusYeetus",
+    "discord": "https://discord.gg/KZ5Q364hEg"
+  },
+  "license": "MIT",
+  "icon": "assets/narrus_yeetus/icon.png"
+}
