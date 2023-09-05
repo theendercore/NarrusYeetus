@@ -13,8 +13,8 @@ Has it scared you at a late dark night?
 Do you just not like it?
 
 If you answered yes to any of these questions then this mod is for you!
-I just takes all fo your pent-up frustrations and anger and points it towards the narrator.
-Aka this mod just removes the narrator
+I just takes all of your pent-up frustrations and anger and points it towards the narrator.
+Aka this mod just removes the narrator.
 
 ### Quilt?
 The quilt loader loads mods later so there is not quilt version for now.
