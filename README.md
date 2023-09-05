@@ -16,10 +16,9 @@ If you answered yes to any of these questions then this mod is for you!
 I just takes all fo your pent-up frustrations and anger and points it towards the narrator.
 Aka this mod just removes the narrator
 
-### Warning!
-Fabric and Quilt have separate jars.
-So if you use quilt you cant just install the fabric version.
-This is because of how the quilt loader loads mods. *My apologies*
+### Quilt?
+The quilt loader loads mods later so there is not quilt version for now.
+*My apologies*
 
 
 ### Dependencies & Config
