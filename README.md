@@ -17,7 +17,7 @@ I just takes all of your pent-up frustrations and anger and points it towards th
 Aka this mod just removes the narrator.
 
 ### Quilt?
-The quilt loader loads mods later so there is not quilt version for now.
+The quilt loader loads mods later. So there is no quilt version for now.
 *My apologies*
 
 
