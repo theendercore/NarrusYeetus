@@ -3,9 +3,7 @@
   "minVersion": "0.8",
   "package": "com.theendercore.narrus_yeetus.mixin",
   "compatibilityLevel": "JAVA_17",
-  "mixins": [
-    "NarratorYeeter"
-  ],
+  "mixins": [ "NarratorMixin" ],
   "injectors": {
     "defaultRequire": 1
   }
