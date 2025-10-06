@@ -14,7 +14,7 @@ public interface NarratorMixin {
     private static void getNarrator(@NotNull CallbackInfoReturnable<Narrator> cir) {
         LoggerFactory.getLogger("Narrator").info("The Narrator has been disabled by Narrus Yeetus!");
         cir.setReturnValue(new Narrator() {
-            @Override public void say(String msg, boolean interrupt) { }
+            @Override public void say(String msg, boolean interrupt, float volume) { }
             @Override public void clear() { }
             @Override public boolean active() { return false; }
             @Override public void destroy() { }
